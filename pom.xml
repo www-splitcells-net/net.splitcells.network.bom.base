@@ -59,11 +59,6 @@
                 <artifactId>flatlaf</artifactId>
                 <version>3.2.1</version>
             </dependency>
-            <dependency>
-                <groupId>com.miglayout</groupId>
-                <artifactId>miglayout-swing</artifactId>
-                <version>11.1</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
