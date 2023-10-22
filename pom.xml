@@ -5,6 +5,8 @@
     <artifactId>network.bom</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <properties>
+        <encoding.default>UTF-8</encoding.default>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <antlr.version>4.11.1</antlr.version>
     </properties>
     <dependencyManagement>
