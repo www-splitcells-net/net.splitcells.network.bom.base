@@ -3,6 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.splitcells</groupId>
     <artifactId>network.bom</artifactId>
+    <description>Please document for every dependency, why it was chosen or what it is used for.</description>
     <version>0.0.1-SNAPSHOT</version>
     <properties>
         <encoding.default>UTF-8</encoding.default>
@@ -13,61 +14,75 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <!-- This is used in order to define and parse grammars. -->
                 <groupId>org.antlr</groupId>
                 <artifactId>antlr4-runtime</artifactId>
                 <version>${antlr.version}</version>
             </dependency>
             <dependency>
+                <!-- This is used in order to define and parse grammars. -->
                 <groupId>org.antlr</groupId>
                 <artifactId>antlr4</artifactId>
                 <version>${antlr.version}</version>
             </dependency>
             <dependency>
+                <!-- This is used for rendering of CommonMark documents to HTML. -->
                 <groupId>org.commonmark</groupId>
                 <artifactId>commonmark</artifactId>
                 <version>0.21.0</version>
             </dependency>
             <dependency>
+                <!-- This is used in order to render CSV files. -->
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-csv</artifactId>
                 <version>1.7</version>
             </dependency>
             <dependency>
+                <!-- This is not actively used yet, but could be used in order to create OpenOffice sheets. -->
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi-ooxml</artifactId>
                 <version>4.1.0</version>
             </dependency>
             <dependency>
+                <!-- This is used as a basic webserver with easy authentication options via private/public keys. -->
                 <groupId>io.vertx</groupId>
                 <artifactId>vertx-core</artifactId>
                 <version>${vertx.version}</version>
             </dependency>
             <dependency>
+                <!-- This is used as a basic webserver with easy authentication options via private/public keys. -->
                 <groupId>io.vertx</groupId>
                 <artifactId>vertx-web</artifactId>
                 <version>${vertx.version}</version>
             </dependency>
             <dependency>
+                <!-- This is used in order to ease some operations of folders inside the file system. -->
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>2.11.0</version>
             </dependency>
             <dependency>
+                <!-- This is used for Java Source Code analysis and transformations. -->
                 <groupId>com.github.javaparser</groupId>
                 <artifactId>javaparser-symbol-solver-core</artifactId>
                 <version>3.22.0</version>
             </dependency>
             <dependency>
+                <!-- This is used for improving Swing's look and feel. -->
                 <groupId>com.formdev</groupId>
                 <artifactId>flatlaf</artifactId>
                 <version>3.2.1</version>
             </dependency>
             <dependency>
+                <!-- Used for Git operations. -->
                 <groupId>org.eclipse.jgit</groupId>
                 <artifactId>org.eclipse.jgit</artifactId>
                 <version>6.7.0.202309050840-r</version>
             </dependency>
             <dependency>
+                <!-- This is used for the org.springframework.core.io.support.PathMatchingResourcePatternResolver.
+                It provides a good implementation in order to list all paths of a class loader's resources.
+                 -->
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-core</artifactId>
                 <version>5.3.30</version>
