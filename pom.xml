@@ -10,6 +10,15 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <antlr.version>4.11.1</antlr.version>
         <vertx.version>4.4.0</vertx.version>
+        <!-- The Java version is set here,
+        so the chosen version and therefore all dependency can be documented at one place,
+        which avoids consistency problems.
+
+        Do not chose Java versions, that are not available in Debian stable,
+        as it can get otherwise relatively hard to install the required Java version across computers and servers.
+        -->
+        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
     </properties>
     <dependencyManagement>
         <dependencies>
