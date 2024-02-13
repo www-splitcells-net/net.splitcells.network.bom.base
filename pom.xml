@@ -5,6 +5,7 @@
     <artifactId>network.bom</artifactId>
     <description>Please document for every dependency, why it was chosen or what it is used for.</description>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <properties>
         <encoding.default>UTF-8</encoding.default>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,6 +20,10 @@
         -->
         <maven.compiler.target>21</maven.compiler.target>
         <maven.compiler.source>21</maven.compiler.source>
+        <!-- eclipse.adoptium settings were found via https://api.adoptium.net/v3/assets/version/%5B21%2C22%5D?architecture=x64&heap_size=normal&image_type=jre&lts=true&os=linux&page=0&page_size=10&project=jdk&release_type=ga&semver=false&sort_method=DATE&sort_order=DESC&vendor=eclipse -->
+        <eclipse.adoptium.jre.linux.version.name>jdk-21.0.2+13-jre</eclipse.adoptium.jre.linux.version.name>
+        <eclipse.adoptium.jre.linux.version.url>https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jre_x64_linux_hotspot_21.0.2_13.tar.gz</eclipse.adoptium.jre.linux.version.url>
+        <eclipse.adoptium.jre.linux.version.checksum>51141204fe01a9f9dd74eab621d5eca7511eac67315c9975dbde5f2625bdca55</eclipse.adoptium.jre.linux.version.checksum>
     </properties>
     <dependencyManagement>
         <dependencies>
