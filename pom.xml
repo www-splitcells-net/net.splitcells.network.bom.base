@@ -24,6 +24,10 @@
         <eclipse.adoptium.jre.linux.version.name>jdk-21.0.2+13-jre</eclipse.adoptium.jre.linux.version.name>
         <eclipse.adoptium.jre.linux.version.url>https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jre_x64_linux_hotspot_21.0.2_13.tar.gz</eclipse.adoptium.jre.linux.version.url>
         <eclipse.adoptium.jre.linux.version.checksum>51141204fe01a9f9dd74eab621d5eca7511eac67315c9975dbde5f2625bdca55</eclipse.adoptium.jre.linux.version.checksum>
+        <!-- Windows query for finding version: https://api.adoptium.net/v3/assets/version/%5B21%2C22%5D?architecture=x64&heap_size=normal&image_type=jre&os=windows&page=0&page_size=10&project=jdk&release_type=ga&semver=false&sort_method=DEFAULT&sort_order=DESC&vendor=eclipse -->
+        <eclipse.adoptium.jre.windows.version.name>jdk-21.0.2+13-jre</eclipse.adoptium.jre.windows.version.name>
+        <eclipse.adoptium.jre.windows.version.url>https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jre_x64_windows_hotspot_21.0.2_13.zip</eclipse.adoptium.jre.windows.version.url>
+        <eclipse.adoptium.jre.windows.version.checksum>a29b88541bc11276de4c4cbdfac60e374ef8a34a415f61cb02a2b6a46f0e1064</eclipse.adoptium.jre.windows.version.checksum>
     </properties>
     <dependencyManagement>
         <dependencies>
