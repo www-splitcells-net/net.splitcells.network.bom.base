@@ -125,6 +125,12 @@
                 <artifactId>acme4j-client</artifactId>
                 <version>3.2.1</version>
             </dependency>
+            <dependency>
+                <!-- This is used as a backend implementation for `net.splitcells.dem.resource.communication.log.Logs`. -->
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-core</artifactId>
+                <version>1.3.5</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
