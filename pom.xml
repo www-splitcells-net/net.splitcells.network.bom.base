@@ -79,6 +79,12 @@
                 <version>${vertx.version}</version>
             </dependency>
             <dependency>
+                <!-- This is used for basic authentication for the webserver. -->
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-auth-common</artifactId>
+                <version>${vertx.version}</version>
+            </dependency>
+            <dependency>
                 <!-- This is used in order to ease some operations of folders inside the file system. -->
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
