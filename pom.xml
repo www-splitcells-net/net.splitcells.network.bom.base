@@ -188,6 +188,14 @@
                 <artifactId>commons-lang3</artifactId>
                 <version>3.14.0</version>
             </dependency>
+            <dependency>
+                <!-- Used for testing the web server like a user.
+                TODO This makes selenium-java obsolete.
+                -->
+                <groupId>com.microsoft.playwright</groupId>
+                <artifactId>playwright</artifactId>
+                <version>1.45.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
