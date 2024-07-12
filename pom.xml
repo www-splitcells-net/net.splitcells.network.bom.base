@@ -33,6 +33,7 @@
         <eclipse.adoptium.jre.macos.version.name>jdk-21.0.2+13-jre</eclipse.adoptium.jre.macos.version.name>
         <eclipse.adoptium.jre.macos.version.url>https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jre_aarch64_mac_hotspot_21.0.2_13.tar.gz</eclipse.adoptium.jre.macos.version.url>
         <eclipse.adoptium.jre.macos.version.checksum>c5704de3e0b6fb977db97b9b50d68dd65630e330375fd721ce9621dc407a4fb2</eclipse.adoptium.jre.macos.version.checksum>
+        <jquery.version>3.7.1</jquery.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -170,6 +171,11 @@
                 <groupId>com.microsoft.playwright</groupId>
                 <artifactId>playwright</artifactId>
                 <version>1.45.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>jquery</artifactId>
+                <version>${jquery.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
