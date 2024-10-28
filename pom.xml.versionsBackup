@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>network.bom</artifactId>
+    <description>Please document for every dependency, why it was chosen or what it is used for.</description>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <parent>
+        <groupId>net.splitcells</groupId>
+        <artifactId>network.bom.base</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <!-- This is used in order to define and parse grammars. -->
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr4-runtime</artifactId>
+                <version>${antlr.version}</version>
+            </dependency>
+            <dependency>
+                <!-- This is used in order to define and parse grammars. -->
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr4</artifactId>
+                <version>${antlr.version}</version>
+            </dependency>
+            <dependency>
+                <!-- This is used for rendering of CommonMark documents to HTML. -->
+                <groupId>org.commonmark</groupId>
+                <artifactId>commonmark</artifactId>
+                <version>0.21.0</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
