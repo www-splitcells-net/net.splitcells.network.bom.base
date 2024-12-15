@@ -23,7 +23,8 @@ The log BOM repo had the base repo as a parent
 In general, it would have worked,
 but the fundamental problem found during the attempt was,
 that every dependency etc. has to be placed in the base BOM and the log BOM project.
-This is a code duplication, which creates an additional maintenance burden.
+This is a code duplication, which creates an additional maintenance burden,
+because some are missed.
 Furthermore, there were not so many dependencies present and
 therefore not so many updates were needed.
 The amount of update commits, was thus considered to be ok for the BOM repo at the moment.
