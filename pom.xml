@@ -35,6 +35,47 @@
         <eclipse.adoptium.jre.macos.version.checksum>c5704de3e0b6fb977db97b9b50d68dd65630e330375fd721ce9621dc407a4fb2</eclipse.adoptium.jre.macos.version.checksum>
         <jquery.version>3.7.1</jquery.version>
     </properties>
+    <profiles>
+        <profile>
+            <id>are-dependencies-up-to-date</id>
+            <activation>
+                <property>
+                    <name>are-dependencies-up-to-date</name>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-enforcer-plugin</artifactId>
+                        <version>3.5.0</version>
+                        <executions>
+                            <execution>
+                                <id>enforce-versions</id>
+                                <goals>
+                                    <goal>enforce</goal>
+                                </goals>
+                                <configuration>
+                                    <rules>
+                                        <maxDependencyUpdates>
+                                            <maxUpdates>0</maxUpdates>
+                                        </maxDependencyUpdates>
+                                    </rules>
+                                </configuration>
+                            </execution>
+                        </executions>
+                        <dependencies>
+                            <dependency>
+                                <groupId>org.codehaus.mojo.versions</groupId>
+                                <artifactId>versions-enforcer</artifactId>
+                                <version>2.18.0</version>
+                            </dependency>
+                        </dependencies>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
     <dependencyManagement>
         <dependencies>
             <dependency>
