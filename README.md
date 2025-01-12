@@ -1,4 +1,4 @@
-# Bill of Material for Dependencies
+# Bill of Material Base for Dependencies
 All used external Java via Maven dependencies are listed here.
 External dependencies for Java via Maven are only allowed to be imported over this repository and
 without overriding the given version, if reasonable possible.
@@ -34,3 +34,6 @@ but as fo 2024-10-06 the cost were considered too high in relation to the benefi
 If this tradeoff is looked at differently in the future, it is encouraged to execute the split.
 Note, that update commits can be removed from this repo,
 without breaking the history.
+
+This changed as of 2025-01-12, as it was found out, that the split was not as costly as previously thought.
+Therefore, there are now the projects `net.splitcells.network.bom.base` and `net.splitcells.network.bom` (=log project).
