@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.splitcells</groupId>
-    <artifactId>network.bom</artifactId>
+    <artifactId>network.bom.base</artifactId>
     <description>Please document for every dependency, why it was chosen or what it is used for.</description>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
