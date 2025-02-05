@@ -112,12 +112,6 @@
                 <version>1.7</version>
             </dependency>
             <dependency>
-                <!-- This is not actively used yet, but could be used in order to create OpenOffice sheets. -->
-                <groupId>org.apache.poi</groupId>
-                <artifactId>poi-ooxml</artifactId>
-                <version>4.1.0</version>
-            </dependency>
-            <dependency>
                 <!-- This is used as a basic webserver with easy authentication options via private/public keys. -->
                 <groupId>io.vertx</groupId>
                 <artifactId>vertx-core</artifactId>
