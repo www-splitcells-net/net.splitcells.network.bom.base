@@ -272,6 +272,13 @@
                     <artifactId>jacoco-maven-plugin</artifactId>
                     <version>0.8.11</version>
                 </plugin>
+                <plugin>
+                    <!-- Is used in order to check if a file is really unpacked via maven-dependency-plugin,
+                    as this plugin fails silently in some cases even so it is not configured that way. -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-verifier-plugin</artifactId>
+                    <version>1.1</version>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
