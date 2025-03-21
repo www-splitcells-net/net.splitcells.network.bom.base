@@ -43,6 +43,8 @@
         </eclipse.adoptium.jre.macos.version.url>
         <eclipse.adoptium.jre.macos.version.checksum>c5704de3e0b6fb977db97b9b50d68dd65630e330375fd721ce9621dc407a4fb2
         </eclipse.adoptium.jre.macos.version.checksum>
+        <!-- ${lombok.version} is provided, so that plugins can reference the Lombok artifact. -->
+        <lombok.version>1.18.36</lombok.version>
     </properties>
     <profiles>
         <profile>
@@ -91,7 +93,7 @@
                 <!-- This is used for val. -->
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>1.18.36</version>
+                <version>${lombok.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
