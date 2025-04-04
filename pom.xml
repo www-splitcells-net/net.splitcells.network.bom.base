@@ -90,7 +90,13 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <!-- This is used for val. -->
+                <!-- This is used for val.
+                  Lombok was removed temporary in the past,
+                  as val was increasing the compile time by about a factor of 10.
+                  This was caused by the fact, that in the past Lombok needed to do the type inference by itself.
+                  Since Lombok 1.18.22 val is implemented by replacing it with `final var`.
+                  This should be a lot faster regarding the compile time.
+                -->
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
