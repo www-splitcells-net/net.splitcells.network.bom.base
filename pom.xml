@@ -90,7 +90,11 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <!-- This is used for val as a syntactic sugar for `final var`.
+                <!--
+                  Any not explicitly allowed usage of Lombok is prohibited,
+                  in order to limit dependencies, that are hard to replace.
+
+                  This is used for val as a syntactic sugar for `final var`.
                   Lombok was removed temporary in the past,
                   as val was increasing the compile time by about a factor of 10.
                   This was caused by the fact, that in the past Lombok needed to do the type inference by itself.
@@ -105,6 +109,15 @@
                   The get prefix is used in order to differentiate between static and not static methods.
                   This is not required, but comes handy, in order to reason,
                   why static getters or constructors do not use the same get prefix.
+
+                  @EqualsAndHashCode and @Data are primarily used for data objects.
+
+                  @ExtensionMethod would be nice, in order to extend existing classes like String,
+                  but this feature is experimental and has bugs.
+
+                  @Delegate would be an excellent feature for aspects and such,
+                  but this feature does not work, if only some methods are manually overridden.
+                  Furthermore, this feature may even be removed from Lombok according to its documentation: https://projectlombok.org/features/experimental/Delegate
                 -->
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
