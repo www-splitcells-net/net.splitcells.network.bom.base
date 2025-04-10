@@ -284,6 +284,12 @@
                     <artifactId>maven-verifier-plugin</artifactId>
                     <version>1.1</version>
                 </plugin>
+                <plugin>
+                    <!-- This is used in order to scan the project's source code via CI. -->
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>5.1.0.4751</version>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
