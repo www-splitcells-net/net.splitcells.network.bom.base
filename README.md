@@ -9,6 +9,17 @@ also makes it easier to understand what external dependencies are present.
 It also avoids most commits in the main code repos,
 that are needed to update all dependencies.
 Thereby it reduces the noise in the program code repos.
+# Migration to Maven 4
+
+The packaging type BOM is not used, as it is discouraged by Maven for internal project
+\[[1](https://maven.apache.org/whatsnewinmaven4.html#New_packaging_type.3A_bom)\]
+\[[2](https://github.com/apache/maven/issues/10841)\].
+BOM packaging could actually be used for that,
+but the Maven community does not want to use it,
+as [some errors in the BOM are more likely to happen this way than in other POMs](https://issues.apache.org/jira/browse/MNG-8009).
+The problem seems to arise from the fact,
+that BOMs are more likely than other POMs to not correctly state their Maven plugin dependencies,
+as BOMs are most of the time the root POM for all other POMs of multi project modules.
 # No BOM Log as of 2024-10-06
 It was attempted to split this BOM repo, but this attempt was aborted.
 The base BOM repo was supposed to have all dependencies and
