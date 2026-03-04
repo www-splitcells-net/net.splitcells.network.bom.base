@@ -94,6 +94,12 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <!-- Java's HashSet iterator is so slow, that a faster implementation is required. -->
+                <groupId>net.sf.trove4j</groupId>
+                <artifactId>trove4j</artifactId>
+                <version>3.0.3</version>
+            </dependency>
+            <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
