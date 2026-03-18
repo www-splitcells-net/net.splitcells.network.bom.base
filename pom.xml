@@ -49,6 +49,7 @@
         </eclipse.adoptium.jre.macos.version.checksum>
         <!-- ${lombok.version} is provided, so that plugins can reference the Lombok artifact. -->
         <lombok.version>1.18.36</lombok.version>
+        <org.openjdk.jmh>1.37</org.openjdk.jmh>
     </properties>
     <profiles>
         <profile>
@@ -93,6 +94,16 @@
     </profiles>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-core</artifactId>
+                <version>${org.openjdk.jmh}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-generator-annprocess</artifactId>
+                <version>${org.openjdk.jmh}</version>
+            </dependency>
             <dependency>
                 <groupId>org.openjdk.jmh</groupId>
                 <artifactId>jmh-core</artifactId>
