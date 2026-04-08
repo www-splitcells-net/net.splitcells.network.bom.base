@@ -20,6 +20,10 @@ as [some errors in the BOM are more likely to happen this way than in other POMs
 The problem seems to arise from the fact,
 that BOMs are more likely than other POMs to not correctly state their Maven plugin dependencies,
 as BOMs are most of the time the root POM for all other POMs of multi project modules.
+Instead, BOMs in this project are actual just Maven projects of type pom,
+that are used as parents for other POMs.
+This seems to be OK from the Maven's community point of view and
+will cause the least of amount of changes in future Maven releases.
 # No BOM Log as of 2024-10-06
 It was attempted to split this BOM repo, but this attempt was aborted.
 The base BOM repo was supposed to have all dependencies and
