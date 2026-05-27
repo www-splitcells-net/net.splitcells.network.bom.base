@@ -344,6 +344,12 @@
                     <artifactId>sonar-maven-plugin</artifactId>
                     <version>5.1.0.4751</version>
                 </plugin>
+                <plugin>
+                    <!-- This is primarily used for extensions. -->
+                    <groupId>fr.jcgay.maven</groupId>
+                    <artifactId>maven-profiler</artifactId>
+                    <version>3.2</version>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
